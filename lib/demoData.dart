@@ -1,5 +1,7 @@
 // It contains all our demo data that we used
 
+// ignore_for_file: file_names
+
 List<String> demoBigImages = [
   "assets/images/big_1.png",
   "assets/images/big_2.png",

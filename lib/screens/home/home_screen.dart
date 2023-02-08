@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
                       .bodySmall!
                       .copyWith(color: kActiveColor),
                 ),
-                Text(
+                const Text(
                   "San Francisco",
                   style: TextStyle(color: Colors.black),
                 )
@@ -37,14 +37,14 @@ class HomeScreen extends StatelessWidget {
             actions: [
               TextButton(
                 onPressed: () {},
-                child: Text(
+                child: const Text(
                   "Filter",
                   style: TextStyle(color: Colors.black),
                 ),
               ),
             ],
           ),
-          SliverPadding(
+          const SliverPadding(
             padding: EdgeInsets.symmetric(horizontal: defaultPadding),
             sliver: SliverToBoxAdapter(
               child: ImageCarousel(),
