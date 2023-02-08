@@ -15,15 +15,16 @@ class SectionTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.titleLarge,
         ),
         TextButton(
           onPressed: press,
-          style: TextButton.styleFrom(primary: kActiveColor),
-          child: Text("Sell All"),
+          style: TextButton.styleFrom(foregroundColor: kActiveColor),
+          child: const Text("Sell All"),
         ),
       ],
     );

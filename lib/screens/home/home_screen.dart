@@ -7,7 +7,7 @@ import 'package:foodly/screens/home/components/section_title.dart';
 import '../../demoData.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +18,22 @@ class HomeScreen extends StatelessWidget {
             backgroundColor: Colors.white,
             elevation: 0,
             floating: true,
-            title: Column(children: [
-              Text(
-                "Delivery to".toUpperCase(),
-                style: Theme.of(context)
-                    .textTheme
-                    .bodySmall!
-                    .copyWith(color: kActiveColor),
-              ),
-              Text(
-                "San Francisco",
-                style: TextStyle(color: Colors.black),
-              )
-            ]),
+            centerTitle: true,
+            title: Column(
+              children: [
+                Text(
+                  "Delivery to".toUpperCase(),
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodySmall!
+                      .copyWith(color: kActiveColor),
+                ),
+                Text(
+                  "San Francisco",
+                  style: TextStyle(color: Colors.black),
+                )
+              ],
+            ),
             actions: [
               TextButton(
                 onPressed: () {},
@@ -68,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                       title: demoMediumCardData[index]['name'],
                       location: demoMediumCardData[index]['location'],
                       image: demoMediumCardData[index]['image'],
-                      deliveryTime: demoMediumCardData[index]['deliverTime'],
+                      deliverTime: demoMediumCardData[index]['deliverTime'],
                       rating: demoMediumCardData[index]['rating'],
                       press: () {},
                     ),
@@ -80,7 +83,7 @@ class HomeScreen extends StatelessWidget {
           SliverPadding(
             padding: const EdgeInsets.all(defaultPadding),
             sliver: SliverToBoxAdapter(
-              child: Image.asset("assets/images/pikachu.jpg"),
+              child: Image.asset("assets/images/Banner.png"),
             ),
           ),
           SliverPadding(
@@ -104,7 +107,7 @@ class HomeScreen extends StatelessWidget {
                       title: demoMediumCardData[index]['name'],
                       location: demoMediumCardData[index]['location'],
                       image: demoMediumCardData[index]['image'],
-                      deliveryTime: demoMediumCardData[index]['deliverTime'],
+                      deliverTime: demoMediumCardData[index]['deliverTime'],
                       rating: demoMediumCardData[index]['rating'],
                       press: () {},
                     ),

@@ -30,7 +30,7 @@ class _ImageCarouselState extends State<ImageCarousel> {
               });
             },
             itemBuilder: (context, index) => ClipRRect(
-              borderRadius: BorderRadius.all(Radius.circular(12)),
+              borderRadius: const BorderRadius.all(Radius.circular(12)),
               child: Image.asset(
                 demoBigImages[index],
               ),
@@ -69,7 +69,7 @@ class IndicatorDot extends StatelessWidget {
       width: 8,
       decoration: BoxDecoration(
         color: isActive ? Colors.white : Colors.white38,
-        borderRadius: BorderRadius.all(Radius.circular(12)),
+        borderRadius: const BorderRadius.all(Radius.circular(12)),
       ),
     );
   }
